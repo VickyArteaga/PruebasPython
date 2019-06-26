@@ -40,8 +40,9 @@ def media(lista2):
 
 media(eliminar())
 
-
+# --------------
 # version 2
+# --------------
 
 def eliminar(lista5):
 
@@ -56,3 +57,39 @@ def media(lista4):
 
 lista3 = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 media(eliminar(lista3))
+
+# Ejercicio 3
+# Escribe una función "ordenada" que tome una lista como parámetro y devuelva True si la lista
+# está ordenada en orden ascendente y devuelva False en caso contrario.
+# Por ejemplo, ordenada([1, 2, 3]) retorna True y ordenada([b, a]) retorna False.
+
+def ordenar(lista):
+
+        original = lista.copy()
+        # print(original)
+        ordenada = lista.copy()
+        ordenada.sort()
+        # print(ordenada)
+
+        if original == ordenada:
+            return True
+        else:
+            return False
+
+
+def pasarLista():
+
+    milista = ["c", "a", "b", "d"]
+    return(milista)
+
+print(ordenar(pasarLista()))
+
+# Ejercicio 4
+# A - Escribe una función llamada "duplicado" que tome una lista y devuelva True si
+# tiene algún elemento duplicado. La función no debe modificar la lista.
+# B - Crear una función que genere una lista de 23 números aleatorios
+# del 1 al 100 y comprobar con la función anterior si existen elementos duplicados.
+# (Puedes ver el módulo random como guía)
+
+
+lista = range(0, 100)
